@@ -1,0 +1,42 @@
+<head>
+    <meta charset="utf-8"/> <title>nuevos componentes</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <form action="."oninput="range_control_value.value=range_control.valueAsNumber">
+        <div class="row">
+
+            <div class="column">
+        
+                <label> Nombre</label><input type="text" name="name_control" autofocus required/>
+                <br/>
+                <label>Url:</label><input type="url" name="url_control" placeholder="escribe la URL de tu pagina web personal"/>
+                <br/>
+                <label>Fecha</label><input type="time" nambe="time_control"/>
+                <br/>
+                <label>Mes</label></labelZ><input type="month" name="month_control"/>
+                <br/>
+                <label>Semana</label><input type="week" name="week_control"/>
+            </div>
+            
+               <div class="column">
+                  <label>Numero (min-10,max10):</label><input type="number" name="numer_control" min="10" value="0"/>
+                  <br/>
+                  <label>Intervalo (min 0,max10):</label>
+                  <div class="row">
+                    <div class="column"><input type="range" name="range_control" min="0" max="10" value="0"/></div>
+                    <div class="column"><output for="range_control" name="range_control_value">0</output></div>
+                  </div>
+                  <br/>
+                  <label>Telefono</label><input type="tel" name="tel_control"/>
+                  <br/>
+                  <label>Termino de busquedad</label><input type="search" name="search_control"/>
+                  <br/>
+                  <label>Color favorito</label><input type="color" name="color_control" value="#000000" />
+            </div>            
+            </div>
+            
+            <input type="submit" value="enviar"/>
+    </form>
+</body>
+
